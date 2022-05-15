@@ -23,7 +23,73 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-   
+          <!-- Style FAQ-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+body {
+	background: #fff;
+}
+.accordion .card {
+	background: none;
+	border: none;
+}
+.accordion .card .card-header {
+	background: none;
+	border: none;
+	padding: .4rem 1rem;
+	font-family: "Roboto", sans-serif;
+}
+.accordion .card-header h2 span {
+	float: left;
+	margin-top: 10px;
+}
+.accordion .card-header .btn {
+	color: #2f2f31;
+	font-size: 1.04rem;
+	text-align: left;
+	position: relative;
+	font-weight: 500;
+	padding-left: 2rem;
+}
+.accordion .card-header i {
+	font-size: 1.2rem;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+.accordion .card-header .btn:hover {
+	color: #ff8300;
+}
+.accordion .card-body {
+	color: #324353;
+	padding: 0.5rem 3rem;
+}
+.page-title {
+	margin: 3rem 0 3rem 1rem;
+	font-family: "Roboto", sans-serif;
+	position: relative;
+}
+.page-title::after {
+	content: "";
+	width: 80px;
+	position: absolute;
+	height: 3px;
+	border-radius: 1px;
+	background: #73bb2b;
+	left: 0;
+	bottom: -15px;
+}
+.accordion .highlight .btn {
+	color: #74bd30;
+}
+.accordion .highlight i {
+	transform: rotate(180deg);
+}
+</style>
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -50,31 +116,110 @@
        
             <!-- Page content-->
                 
-                <div class="container-fluid">
-                    <center><h3 class="mt-4">Pertanyaan Yang Sering Ditanyakan</h3></center>
-                        <br>
-                      
-                        <p>a. Apakah kapasitas peserta bisa ditambah melebihi kapasitas maksimal level PPKM yang berlaku?
-                            <br><b>Jawab:</b> Kapasitas tetap mengacu pada level PPKM yang berlaku pada saat penggunaan ruang rapat (lihat <a href="syarat.html">syarat dan ketentuan</a>).
-                            <br><br>b. Apakah Pihak Kantor bisa menyediakan Proyektor/LCD/Infocus?
-                            <br><b>Jawab:</b> Pihak kantor hanya menyediakan fasilitas sebagaimana disebutkan pada <a href="syarat.html">syarat dan ketentuan</a>.
-                            <br><br>c. Apakah Kantor menyediakan tempat parkir?
-                            <br><b>Jawab:</b> Pihak Kantor menyediakan tempat parkir di timur dan barat gedung serta di depan lobby DPD RI
-                            <br><br>d. Bagaimana cara mendapatkan rekomendasi dari Anggota DPD RI DIY?
-                            <br><b>Jawab:</b> Panitia kegiatan dapat mengajukan surat permohonan persetujuan penggunaan ruang rapat kepada salah satu anggota DPD RI.
-                            <br><br>e. Mengapa fasilitasi penggunaan ruang rapat harus mendapatkan rekomendasi/persetujuan anggota DPD RI?
-                            <br><b>Jawab:</b> Pada dasarnya penggunaan ruang rapat adalah semata untuk memfasilitasi kegiatan anggota DPD RI, alat kelengkapan DPD RI dan Sekretariat Jenderal DPD RI. Namun demikian, Anggota DPD RI diperbolehkan memfasilitasi konstituennya untuk melaksanakan kegiatan di gedung DPD RI. Karena hak fasilitasi ada pada Anggota DPD RI, maka konstituen/masyarakat yang ingin menggunakan gedung diharuskan memperoleh rekomendasi/persetujuan dari salah satu Anggota DPD RI. 
-                            <br><br>f. Apakah instansi pemerintah provinsi/kabupaten/kota juga perlu mendapatkan rekomendasi dari anggota DPD RI untuk dapat menggunakan ruang rapat?
-                            <br><b>Jawab:</b> Tidak perlu. instansi pemerintah provinsi/kabupaten/kota cukup mengajukan surat peminjaman gedung saja.
-                            <br><br>g. Apakah Kantor DPD RI DIY melayani fasilitasi penggunaan ruang rapat pada hari Sabtu dan Minggu?
-                            <br><b>Jawab:</b> Kantor DPD RI DIY hanya melayani fasilitasi penggunaan ruang rapat pada hari dan jam kerja.
-                            </p>
-                        </div>
+               <div class="container-lg">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-title">Pertanyaan Yang Sering Diajukan</h1>
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="clearfix mb-0">
+							<a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>Apakah kapasitas peserta bisa ditambah melebihi kapasitas maksimal level PPKM yang berlaku?</a>									
+						</h2>
+					</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">Kapasitas tetap mengacu pada level PPKM yang berlaku pada saat penggunaan ruang rapat (lihat <a href="syarat.html">syarat dan ketentuan</a>).</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> Apakah Pihak Kantor bisa menyediakan Proyektor/LCD/Infocus?</a>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">Pihak kantor hanya menyediakan fasilitas sebagaimana disebutkan pada <a href="syarat.html">syarat dan ketentuan</a>.</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> Apakah Kantor menyediakan tempat parkir?</a>                     
+						</h2>
+					</div>
+					<div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body">Pihak Kantor menyediakan tempat parkir di timur dan barat gedung serta di depan lobby DPD RI.</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i> Bagaimana cara mendapatkan rekomendasi dari Anggota DPD RI DIY?</a>                               
+						</h2>
+					</div>
+					<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+						<div class="card-body">Panitia kegiatan dapat mengajukan surat permohonan persetujuan penggunaan ruang rapat kepada salah satu anggota DPD RI.</div>
+					</div>
+				</div>
+              <div class="card">
+					<div class="card-header" id="headingFive">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><i class="fa fa-chevron-circle-down"></i> Mengapa fasilitasi penggunaan ruang rapat harus mendapatkan rekomendasi/persetujuan anggota DPD RI?</a>                     
+						</h2>
+					</div>
+					<div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+						<div class="card-body">Pada dasarnya penggunaan ruang rapat adalah semata untuk memfasilitasi kegiatan anggota DPD RI, alat kelengkapan DPD RI dan Sekretariat Jenderal DPD RI. Namun demikian, Anggota DPD RI diperbolehkan memfasilitasi konstituennya untuk melaksanakan kegiatan di gedung DPD RI. Karena hak fasilitasi ada pada Anggota DPD RI, maka konstituen/masyarakat yang ingin menggunakan gedung diharuskan memperoleh rekomendasi/persetujuan dari salah satu Anggota DPD RI.</div>
+					</div>
+				</div>
+               <div class="card">
+					<div class="card-header" id="headingSix">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><i class="fa fa-chevron-circle-down"></i> Apakah instansi pemerintah provinsi/kabupaten/kota juga perlu mendapatkan rekomendasi dari anggota DPD RI untuk dapat menggunakan ruang rapat?</a>                     
+						</h2>
+					</div>
+					<div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
+						<div class="card-body">Tidak perlu. instansi pemerintah provinsi/kabupaten/kota cukup mengajukan surat peminjaman gedung saja.</div>
+					</div>
+				</div>
+              <div class="card">
+					<div class="card-header" id="headingSeven">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><i class="fa fa-chevron-circle-down"></i> Apakah Kantor DPD RI DIY melayani fasilitasi penggunaan ruang rapat pada hari Sabtu dan Minggu?</a>                     
+						</h2>
+					</div>
+					<div id="collapseSeven" class="collapse show" aria-labelledby="headingSeven" data-parent="#accordionExample">
+						<div class="card-body">Kantor DPD RI DIY hanya melayani fasilitasi penggunaan ruang rapat pada hari dan jam kerja.</div>
+					</div>
+				</div>
+              
+			</div>
+		</div>
+	</div>
+</div>
+                <!-- End Page content-->
              </div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- JS FAQ-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script>
+$(document).ready(function(){
+	// Add minus icon for collapse element which is open by default
+	$(".collapse.show").each(function(){
+		$(this).prev(".card-header").addClass("highlight");
+	});
+	
+	// Highlight open collapsed element 
+	$(".card-header .btn").click(function(){
+		$(".card-header").not($(this).parents()).removeClass("highlight");
+		$(this).parents(".card-header").toggleClass("highlight");
+	});
+});
+</script>
     </body>
 </html>
