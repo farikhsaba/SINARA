@@ -11352,12 +11352,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .sidebar-social i {
 display: block;
 margin: 0 auto 10px auto;
-width: 32px;
-  height: 32px;
+width: 64pxpx;
+  height: 64px;
   margin: 10px auto 0;
-  line-height: 32px;
+  line-height: 64px;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   color: #40E0D0;
 margin-top:0;
 padding-top:5px;
